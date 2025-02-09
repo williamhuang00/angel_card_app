@@ -1,12 +1,16 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom'
 
 
 function LoginComponent() {
+	const navigate = useNavigate()
+
 	const handleSubmit = (e) => {
 		e.preventDefault()
 		const password = document.getElementById('floatingPassword').value
 		if (password === 'angel') {
 			alert('correct password! welcome Angel!')
+			navigate('/card')
 		} else {
 			alert('Wrong password! Try again.')
 		}
