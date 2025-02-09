@@ -3,6 +3,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import LoginComponent from './LoginComponent/LoginComponent';
 import CardComponent from './CardComponent/CardComponent';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import './custom.css';  // Import the custom SASS file
+
 
 function App() {
   return (
