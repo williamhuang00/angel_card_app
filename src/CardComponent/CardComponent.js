@@ -1,26 +1,56 @@
-import React from 'react'
+import React, {useState} from 'react'
+import image from "../Images/simpleplan.jpg"
+import './CardComponent.css'
 
 function CardComponent() {
+    const [currentId, setCurrentId] = useState(0)
+    
+    const data = [
+        {
+            "id": 0,
+            "title": "Simple Plan",
+            "description": "Simple Description",
+            "image": image
+        },
+        {
+            "id": 1,
+            "title": "Another Plan",
+            "description": "Another Description",
+            "image": image
+        },
+        {
+            "id": 2,
+            "title": "Third Plan",
+            "description": "Third Description",
+            "image": image
+        }
+    ]
+
+    const currentData = data[currentId]
+
     return (<>
         <div class="container">
             <div class="bg-body-tertiary p-5 rounded">
-                <h1>Navbar example</h1>
-                <p class="lead">This example is a quick exercise to illustrate how the top-aligned navbar works. As you scroll, this navbar remains in its original position and moves with the rest of the page.</p>
-                <a class="btn btn-lg btn-primary" href="/docs/5.3/components/navbar/" role="button">View navbar docs »</a>
+                <h1>{currentData.title}</h1>
+                <p class="lead">{currentData.description}</p>
+                <img src={currentData.image} alt="" width="100%" height="100%"/>
             </div>
         </div>
 
 
         <nav aria-label="Page navigation example">
             <ul class="pagination justify-content-center">
-                <li class="page-item disabled">
-                    <a class="page-link">Previous</a>
+                <li className={`page-item ${currentId === 0 ? 'disabled' : ''}`}>
+                        <a className="page-link" onClick={() => setCurrentId(currentId - 1)}>Previous</a>
                 </li>
-                <li class="page-item"><a class="page-link" href="#">1</a></li>
-                <li class="page-item"><a class="page-link" href="#">2</a></li>
-                <li class="page-item"><a class="page-link" href="#">3</a></li>
-                <li class="page-item">
-                    <a class="page-link" href="#">Next</a>
+
+                {data.map((item, index) => (
+                        <li key={item.id} className={`page-item ${currentId === index ? 'active' : ''}`}>
+                            <a className="page-link" onClick={() => setCurrentId(index)}>{item.id + 1}</a>
+                        </li>
+                ))}
+                <li className={`page-item ${currentId === data.length - 1 ? 'disabled' : ''}`}>
+                        <a className="page-link" onClick={() => setCurrentId(currentId + 1)}>Next</a>
                 </li>
             </ul>
         </nav>
