@@ -10,3 +10,11 @@ body .bg-body-tertiary {
     background-color: #FFEDFA !important;
     color: #DE3163;
 }
+
+.fixed-bottom {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #FFEDFA;
+    color: #DE3163;
+}
