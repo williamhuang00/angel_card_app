@@ -9,7 +9,7 @@ import './custom.css';  // Import the custom SASS file
 function App() {
   return (
     <div className="App">
-      <Router>
+      <Router basename="/angel_card_app">
       <Routes>
         <Route path="/" element={<LoginComponent/>} />
         <Route path="/card" element={<CardComponent/>} />
