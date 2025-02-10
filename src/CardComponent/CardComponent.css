@@ -1,5 +1,6 @@
 .container {
     margin-top: 5%;
+    max-width: 540px !important;
 }
 
 .pagination {

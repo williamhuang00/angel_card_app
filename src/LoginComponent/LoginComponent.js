@@ -1,5 +1,7 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom'
+import Cookies from 'js-cookie';
+
 
 
 function LoginComponent() {
@@ -9,7 +11,8 @@ function LoginComponent() {
 		e.preventDefault()
 		const password = document.getElementById('floatingPassword').value
 		if (password === 'angel') {
-			alert('correct password! welcome Angel!')
+			alert('Welcome Angel!')
+			Cookies.set('authToken', 'angel', { expires: 7, secure: true, sameSite: 'Strict' });
 			navigate('/card')
 		} else {
 			alert('Wrong password! Try again.')

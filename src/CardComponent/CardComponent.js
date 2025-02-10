@@ -2,10 +2,25 @@ import React, {useState} from 'react'
 import gingerbread_img from "../Images/gingerbreadman.png"
 import mewow_cafe from "../Images/mewow_cafe.jpg"
 import './CardComponent.css'
+import Cookies from 'js-cookie';
+import { useNavigate } from 'react-router-dom'
+import { useEffect } from 'react';
+
+
 
 function CardComponent() {
+    const navigate = useNavigate()
+
     const [currentId, setCurrentId] = useState(0)
-    
+    const token = Cookies.get('authToken');
+
+    useEffect(() => {
+        const token = Cookies.get('authToken'); // Check the cookie
+        if (!token) {
+          navigate('/'); // Redirect if no auth token
+        }
+    }, [navigate]); // Dependency array ensures it runs once on mount
+
     const data = [
         {
             "id": 0,
@@ -16,7 +31,7 @@ function CardComponent() {
         {
             "id": 1,
             "title": "",
-            "description": "You're so silly and cheerful when you talk about the things you like.",
+            "description": "I like how silly you can be when we talk.",
             "image": gingerbread_img
         },
         {
