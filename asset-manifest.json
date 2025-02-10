@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/angel_card_app/static/css/main.fb7d76cd.css",
+    "main.js": "/angel_card_app/static/js/main.8a67829c.js",
+    "static/js/453.671f9570.chunk.js": "/angel_card_app/static/js/453.671f9570.chunk.js",
+    "static/media/gingerbreadman.png": "/angel_card_app/static/media/gingerbreadman.1c78236ab755d7b83516.png",
+    "static/media/mewow_cafe.jpg": "/angel_card_app/static/media/mewow_cafe.798eb7122f6869a4df62.jpg",
+    "index.html": "/angel_card_app/index.html",
+    "main.fb7d76cd.css.map": "/angel_card_app/static/css/main.fb7d76cd.css.map",
+    "main.8a67829c.js.map": "/angel_card_app/static/js/main.8a67829c.js.map",
+    "453.671f9570.chunk.js.map": "/angel_card_app/static/js/453.671f9570.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.fb7d76cd.css",
+    "static/js/main.8a67829c.js"
+  ]
+}
