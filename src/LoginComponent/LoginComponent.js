@@ -10,7 +10,7 @@ function LoginComponent() {
 	const handleSubmit = (e) => {
 		e.preventDefault()
 		const password = document.getElementById('floatingPassword').value
-		if (password === 'angel') {
+		if (password === 'rightangle') {
 			alert('Welcome Angel!')
 			Cookies.set('authToken', 'angel', { expires: 7, secure: true, sameSite: 'Strict' });
 			navigate('/card')

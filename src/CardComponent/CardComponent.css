@@ -1,6 +1,11 @@
 .container {
     margin-top: 5%;
     max-width: 540px !important;
+    max-height: 300px !important;
+}
+
+.container img {
+    max-height: 450px;
 }
 
 .pagination {
