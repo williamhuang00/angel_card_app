@@ -19,8 +19,8 @@ function CardComponent() {
     const data = [
         {
             "id": 0,
-            "title": "Hi Angel",
-            "description": "I know we haven't known each other for very long, but even still I wanted to do something special for you for valentine's day. I hope you like it!",
+            "title": "To Angel,",
+            "description": "I know we haven't known each other for very long, but even still I wanted to do something special for you for valentine's day by creating this website. Navigate this website using the buttons below. Enjoy!",
             "image": null
         },
         {
