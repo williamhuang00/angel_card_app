@@ -39,7 +39,7 @@ function CardComponent() {
             "id": 3,
             "title": "That's it for now!",
             "description": " I hope this wasn’t too cringe for ya 😅",
-            "image": nullç
+            "image": null
         }
     ]
 
