@@ -5,7 +5,8 @@
 }
 
 .container img {
-    max-height: 450px;
+    max-height: 250px;
+    max-width: 250px;
 }
 
 .pagination {
