@@ -11,7 +11,7 @@ function LoginComponent() {
 		e.preventDefault()
 		const password = document.getElementById('floatingPassword').value
 		if (password === 'rightangle') {
-			alert('Welcome Angel!')
+			alert('Hi Angle')
 			Cookies.set('authToken', 'angel', { expires: 7, secure: true, sameSite: 'Strict' });
 			navigate('/card')
 		} else {
