@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/angel_card_app/static/css/main.bb5d9871.css",
-    "main.js": "/angel_card_app/static/js/main.d2558f48.js",
+    "main.js": "/angel_card_app/static/js/main.cbd24d68.js",
     "static/js/453.671f9570.chunk.js": "/angel_card_app/static/js/453.671f9570.chunk.js",
     "static/media/gongcha.png": "/angel_card_app/static/media/gongcha.c0643c5cf1b4738be1b5.png",
     "static/media/mewow.jpg": "/angel_card_app/static/media/mewow.85db661924c4c1fc2b75.jpg",
     "index.html": "/angel_card_app/index.html",
     "main.bb5d9871.css.map": "/angel_card_app/static/css/main.bb5d9871.css.map",
-    "main.d2558f48.js.map": "/angel_card_app/static/js/main.d2558f48.js.map",
+    "main.cbd24d68.js.map": "/angel_card_app/static/js/main.cbd24d68.js.map",
     "453.671f9570.chunk.js.map": "/angel_card_app/static/js/453.671f9570.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.bb5d9871.css",
-    "static/js/main.d2558f48.js"
+    "static/js/main.cbd24d68.js"
   ]
 }
