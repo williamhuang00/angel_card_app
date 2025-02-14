@@ -32,7 +32,7 @@ function CardComponent() {
         {
             "id": 2,
             "title": "",
-            "description": "It doesn’t matter if it’s in person or over the phone I'd like to keep talking and spend more time together. I know you’re busy with school so I appreciate the effort you’ve put in to stay in touch. I can only hope to return the effort back 2x. No 3x… 4x….? Uhh you get the point.",
+            "description": "I know you’re busy with school so I appreciate the effort you’ve put in to stay in touch. Your time is valuable and I won't take it for granted.",
             "image": gingerbread_img
         },
         {
